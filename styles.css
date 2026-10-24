@@ -153,6 +153,7 @@ details.src[open] summary::after{transform:rotate(-135deg)}
 .foot{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--ink-2);font-size:.92rem}
 .foot p{margin:0 0 6px}
 .foot__small{font-size:.8rem;color:var(--ink-3)}
+.foot__dev{font-size:.82rem;color:var(--ink-3);margin-top:8px;font-weight:600}
 
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,30px);background:var(--ink);color:#fff;padding:12px 18px;border-radius:12px;font-weight:600;font-size:.9rem;opacity:0;pointer-events:none;transition:.25s;z-index:50}
 .toast.on{opacity:1;transform:translate(-50%,0)}
