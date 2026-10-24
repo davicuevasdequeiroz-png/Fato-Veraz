@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>Fato Veraz — A verdade a qualquer preço</title>
+  <meta name="description" content="Fato Veraz analisa, fala por fala, o que os candidatos à presidência disseram no debate. A paz, se possível, mas a verdade a qualquer preço.">
+  <meta property="og:title" content="Fato Veraz">
+  <meta property="og:description" content="A paz, se possível, mas a verdade a qualquer preço.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top__in">
+      <a class="brand" href="#/falas" aria-label="Fato Veraz — início">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <span class="brand__name">Fato <em>Veraz</em></span>
+      </a>
+      <nav class="tabs" aria-label="Seções">
+        <a href="#/falas" data-tab="falas">Falas</a>
+        <a href="#/placar" data-tab="placar">Placar</a>
+        <a href="#/apoie" data-tab="apoie">Apoie</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Debate presidencial · 2º turno · Globo 2026</p>
+      <h1 class="motto">“A paz, se possível,<br>mas a verdade a qualquer preço.”</h1>
+      <p class="hero__sub">Cada fala dos candidatos, checada contra dados oficiais, com o veredito e as fontes à vista.</p>
+    </div>
+  </section>
+
+  <main class="wrap" id="app" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p><strong>Fato Veraz</strong> — “A paz, se possível, mas a verdade a qualquer preço.”</p>
+      <p class="foot__small">Análise de 217 trechos do debate. Video de referência:
+        <a href="https://www.youtube.com/live/Ur9qWD00eKQ?si=fE2EGf2o0Uv4MsC2" target="_blank" rel="noopener">Debate presidencial 23/10/2026</a>.</p>
+    </div>
+  </footer>
+
+  <div class="player" id="player" role="region" aria-label="Controles da audiodescrição" hidden>
+    <div class="player__info">
+      <strong id="pl-status" aria-live="polite"></strong>
+      <span id="pl-sub"></span>
+    </div>
+    <div class="player__ctl">
+      <button type="button" id="pl-prev" aria-label="Fala anterior"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9.500 12z"/></svg></button>
+      <button type="button" id="pl-play" class="player__main" aria-label="Pausar"></button>
+      <button type="button" id="pl-next" aria-label="Próxima fala"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l10.500-7z"/></svg></button>
+      <button type="button" id="pl-stop" aria-label="Parar leitura"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></button>
+      <button type="button" id="pl-opt" class="player__optbtn" aria-label="Opções de voz e velocidade" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></button>
+    </div>
+    <div class="player__opt">
+      <label>Velocidade
+        <select id="pl-rate"><option value="0.85">0,85×</option><option value="1" selected>1×</option><option value="1.15">1,15×</option><option value="1.3">1,3×</option><option value="1.5">1,5×</option></select>
+      </label>
+      <label>Voz <select id="pl-voice"></select></label>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
