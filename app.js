@@ -3,7 +3,7 @@
 
   /* ================== Configuração ================== */
   // Chave Pix para a aba "Apoie". Deixe vazio até ter uma chave real.
-  var PIX_KEY = '';
+  var PIX_KEY = 'afcd0024-28e9-4629-be7a-2274d5e1b9b3';
 
   var CANDS = {
     flavio: { nome: 'Flávio Bolsonaro', curto: 'Flávio', partido: 'PL', foto: 'flavio22-foto-flavio-web.webp', ring: '#1f5fd1' },
