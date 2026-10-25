@@ -2525,6 +2525,11 @@
 | **SEM PROVAS** | **5** | 4,0% | **6** | 6,5% | **11** |
 | **TOTAL DE TRECHOS** | **125** | **100%** | **92** | **100%** | **217** |
 
+> **Índice de Veracidade (Falas com Respaldo da Verdade — Verdadeiro + Verdadeiro, mas...):**  
+> * **Flávio Bolsonaro (PL):** **83 falas (66,4%)** — *33 estritamente verdadeiras (26,4%) + 50 com ressalvas de contexto (40,0%)*  
+> * **Luiz Inácio Lula da Silva (PT):** **72 falas (78,3%)** — *37 estritamente verdadeiras (40,2%) + 35 com ressalvas de contexto (38,0%)*  
+> * **Total no Debate:** **155 falas (71,4%)** com base factual comprovada.
+
 ---
 
 ### 2. Detalhamento Individual por Candidato (com o nº de cada trecho)

@@ -243,6 +243,8 @@
       Object.keys(CANDS).map(function (k) {
         var c = CANDS[k], s = stats(k);
         var vv = s.by['VERDADEIRO'];
+        var vm = s.by['VERDADEIRO, MAS...'];
+        var vTotal = vv + vm;
         return '' +
         '<section class="cand" style="--ring:' + c.ring + '">' +
           '<div class="cand__head">' +
@@ -250,7 +252,7 @@
             '<div><div class="cand__name">' + esc(c.nome) + '</div><div class="cand__party">' + c.partido + '</div></div>' +
             '<div class="cand__total"><b>' + s.total + '</b><span>FALAS</span></div>' +
           '</div>' +
-          '<div class="hl"><b>' + vv + '</b><span>falas verdadeiras<small>' + pct(vv, s.total) + ' das falas analisadas</small></span></div>' +
+          '<div class="hl"><b>' + vTotal + '</b><span>falas com base na verdade<small><strong>' + pct(vTotal, s.total) + '</strong> das falas analisadas · ' + vv + ' verdadeiras (' + pct(vv, s.total) + ') + ' + vm + ' com ressalvas (' + pct(vm, s.total) + ')</small></span></div>' +
           '<div class="stack" role="img" aria-label="Distribuição dos vereditos">' +
             VERDICTS.map(function (v) { return '<i style="width:' + (s.by[v.key] / s.total * 100) + '%;background:' + v.c + '" title="' + esc(v.label) + ': ' + s.by[v.key] + '"></i>'; }).join('') +
           '</div>' +

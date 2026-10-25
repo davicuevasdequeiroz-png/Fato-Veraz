@@ -124,7 +124,8 @@ details.src[open] summary::after{transform:rotate(-135deg)}
 .hl{margin:20px 0 6px;padding:16px;border-radius:14px;background:color-mix(in srgb,var(--v-verdadeiro) 10%,#fff);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 .hl b{font-family:var(--serif);font-size:3rem;line-height:1;color:var(--v-verdadeiro);font-weight:800}
 .hl span{font-weight:600}
-.hl small{display:block;color:var(--ink-2);font-weight:500;font-size:.85rem}
+.hl small{display:block;color:var(--ink-2);font-weight:500;font-size:.85rem;margin-top:4px;line-height:1.45}
+.hl small strong{color:var(--ink);font-weight:700}
 
 .stack{display:flex;height:14px;border-radius:999px;overflow:hidden;margin:18px 0 6px;background:#eee}
 .stack i{display:block;height:100%}
